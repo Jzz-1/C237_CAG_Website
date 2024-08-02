@@ -1,0 +1,15 @@
+/* Comment */
+#container-comment {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+#comment_from{
+  background-color: white;
+  color: black;
+  font-family: Arial;
+}
+
+

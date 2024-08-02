@@ -1,0 +1,70 @@
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../klpfp.jpg" alt="Logo" style="width:50px;" class="rounded-pill">
+            </a>
+            <a class="navbar-brand" href="/">StudART</a>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="option" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            id="option">Workspace</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/published">Published</a></li>
+                            <li><a class="dropdown-item" href="/create">Create</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            id="option">Category</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/RP">RP</a></li>
+                            <li><a class="dropdown-item" href="/category/Singapore">Singapore</a></li>
+                            <li><a class="dropdown-item" href="/category/world">World</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- button to trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalForm" id="option">
+                    Login/ Sign Up
+                </button>
+                <!-- modal -->
+                <div class="modal fade" id="ModalForm" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                <div class="myform bg-dark" id="option">
+                                    <h1 class="text-center">Login</h1>
+                                    <form action="/login" method="POST" enctype="multipart/form-data">
+                                        <div class="mb-3 mt-4">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="email"style="font-family: Arial;">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pw" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="pw" style="font-family: Arial;">
+                                        </div>
+                                        <button type="submit" class="btn btn-light mt-3">LOGIN</button>
+                                        <p>Not a member? <a href="/register">Signup now</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <link href="https://fonts.cdnfonts.com/css/hill-house" rel="stylesheet">
+</body>
+
+</html>
